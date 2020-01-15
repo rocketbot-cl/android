@@ -153,6 +153,23 @@
             },
             "id": "shell",
             "css": "col-md-12"
+          },
+           {
+            "type": "input",
+            "placeholder": {
+              "es": "{resultado}",
+              "en": "{result}"
+            },
+            "title": {
+              "es": "Resultado",
+              "en": "Result"
+            },
+            "help": {
+              "en": "Variable where the result is stored without {}",
+              "es": "Variable donde se almacena el resultado sin {}"
+            },
+            "id": "result",
+            "css": "col-md-6"
           }
         ]
       },
@@ -391,7 +408,6 @@
                 "title": "Pegar",
                 "value": 279
               }
-
             ],
             "title": {
               "es": "Seleccionar evento: ",

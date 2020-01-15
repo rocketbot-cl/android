@@ -66,16 +66,20 @@ if module == "start":
     try:
         app = GetParams('app')
         start = pyndroid.start_app(app)
-        print(start)
 
     except Exception as e:
         PrintException()
         raise e
 
 if module == "shell":
+    app = GetParams('shell')
+    result = GetParams('result')
     try:
-        app = GetParams('shell')
-        pyndroid.execute_by_shell(app)
+
+        con = pyndroid.execute_by_shell(app)[0].decode('utf-8')
+
+        if result:
+            SetVar(result, con)
 
     except Exception as e:
         PrintException()

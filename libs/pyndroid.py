@@ -24,6 +24,7 @@ def list_devices(long_output=False):
 def press_unlock():
     adb = [PATH + 'adb', 'shell', 'input', 'keyevent', '26']
     con = Popen(adb, env=ENV, stdout=PIPE, stderr=PIPE)
+    con.communicate()
 
 
 def press_home():
@@ -39,6 +40,7 @@ def press_menu():
 def start_app(app):
     adb = [PATH + 'adb', 'shell', 'am', 'start', '-n', app]
     con = Popen(adb, env=ENV, stdout=PIPE, stderr=PIPE)
+    con.communicate()
 
 
 def write(text):
@@ -97,11 +99,12 @@ def execute_by_key_event(code):
 def execute_by_shell(params):
     """
 
-    :param params: str,  commands
-    :return:
+    :param params: str,
+    :return: byte,
     """
     adb = [PATH + 'adb', 'shell', params]
     con = Popen(adb, env=ENV, stdout=PIPE, stderr=PIPE)
+    return con.communicate()
 
 
 def unlock_with_pin(pin, wake_screen=True):
