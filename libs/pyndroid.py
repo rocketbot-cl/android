@@ -133,3 +133,4 @@ def unlock_with_swipe(wake_screen=True):
     time.sleep(1)
     swipe(400, 800, 400, 100, 250)
 
+
