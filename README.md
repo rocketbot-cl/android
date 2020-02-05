@@ -2,7 +2,7 @@
 
 Module to control android devices
 
-![alt text](https://github.com/rocketbot-cl/Android/blob/master/Example/unlock.png)
+![alt text](https://github.com/rocketbot-cl/android/blob/master/example/unlock.png)
 
 
 <h2>License</h2>
