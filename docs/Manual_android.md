@@ -1,3 +1,3 @@
 ## android
 
- view the documentation at: https://github.com/rocketbot-cl/SAPB1/blob/master/example/Manual_android.pdf
+ view the documentation at: https://github.com/rocketbot-cl/android/blob/master/example/Manual_android.pdf
